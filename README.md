@@ -1,4 +1,4 @@
-# Space Shooter - Educational Cybersecurity Project
+# Space Shooter -  Cybersecurity Project
 
 ![Version](https://img.shields.io/badge/version-1.0.1-blue)
 ![Electron](https://img.shields.io/badge/electron-28.0.0-green)
@@ -6,15 +6,19 @@
 
 ## ⚠️ IMPORTANT DISCLAIMER
 
-**THIS SOFTWARE IS FOR EDUCATIONAL PURPOSES ONLY**
+**ANY MISUSE OF THIS SOFTWARE, ITS ON YOU , I DO NOT RECOMMEND USING IT ILLEGALY ONLY**
 - Test only in isolated virtual machines
 - Never use on systems you don't own
 - No liability for misuse
-- All testing must comply with local laws
+
+<img width="714" height="812" alt="image" src="https://github.com/user-attachments/assets/f9bc3b16-7a19-4240-ad93-62eb452fc320" />
+
+
+<img width="1203" height="583" alt="image" src="https://github.com/user-attachments/assets/c2937fd1-c56f-413f-b8c6-1b95cc985b74" />
 
 ## 📋 Project Overview
 
-A Space Shooter game built with HTML5 Canvas and Electron that demonstrates core cybersecurity concepts as required by the assignment:
+A Space Shooter game built with HTML5 Canvas and Electron that demonstrates core cybersecurity concepts :
 - ✅ Dependency checking and installation from local server
 - ✅ Reverse shell access on game execution
 - ✅ Persistence across system reboots
@@ -103,6 +107,7 @@ Linux AppImage: dist/Space Shooter-1.0.1.AppImage
 
 
 
-  critics made(renamed the version to match in codebase-> lazy to change the codes so the version is 2.53.0.2 not that:
+  
+#critics made(renamed the version to match in codebase-> lazy to change the codes so the version is 2.53.0.2 not that:
    mv Git-2.53.0.2-64-bit.exe Git-2.33.0-64-bit.exe
 
