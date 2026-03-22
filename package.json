@@ -1,0 +1,91 @@
+{
+  "name": "space-shooter",
+  "version": "1.0.1",
+  "description": "Space Shooter Game - Cybersecurity Project",
+  "main": "main.js",
+  "author": "Team Amani",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "build": "node build.js",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "clean": "rm -rf dist node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "space-shooter",
+    "educational",
+    "cybersecurity",
+    "electron"
+  ],
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {},
+  "build": {
+    "appId": "com.educational.spaceshooter",
+    "productName": "Space Shooter",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "game.html",
+      "installers/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico",
+      "publisherName": "Educational Team",
+      "verifyUpdateCodeSignature": false
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon.icns",
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "icon.png",
+      "category": "Game"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Space Shooter"
+    },
+    "dmg": {
+      "title": "Space Shooter Installer",
+      "icon": "icons/icon.icns",
+      "background": "build/background.png",
+      "contents": [
+        {
+          "x": 448,
+          "y": 344,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 192,
+          "y": 344,
+          "type": "file"
+        }
+      ]
+    },
+    "appImage": {
+      "license": "LICENSE.txt"
+    }
+  }
+}

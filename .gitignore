@@ -1,0 +1,5 @@
+dist/
+node_modules/
+installers/
+cache/
+curl-8.19.0_2-win64-mingw/
